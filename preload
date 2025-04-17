@@ -1,8 +1,12 @@
 #!/bin/bash
-echo python3 -m venv venv
-echo source venv/bin/activate
-echo pip install -r requirements.txt
-echo pip install pytest
-echo pytest
-echo uvicorn app.main:app
+python3 -m venv venv
+source venv/bin/activate
+pipout=$(pip install -r requirements.txt)
+echo $pipout
+pyte=$(pip install pytest)
+echo $pyte
+tes=$(pytest)
+echo $tes
+# start=$(uvicorn app.main:app)
+# echo $start
 exit 0
