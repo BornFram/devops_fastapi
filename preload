@@ -1,0 +1,8 @@
+#!/bin/bash
+echo python3 -m venv venv
+echo source venv/bin/activate
+echo pip install -r requirements.txt
+echo pip install pytest
+echo pytest
+echo uvicorn app.main:app
+exit 0
