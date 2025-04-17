@@ -10,3 +10,4 @@ engine = create_engine(url)
 con = engine.connect()
 res = con.execute(text("select * from product"))
 print(res.all())
+
